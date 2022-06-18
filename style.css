@@ -1,0 +1,79 @@
+@font-face {
+  font-family: anek_latin;
+  src: url(/font/Anek_Latin/AnekLatin-VariableFont_wdth\,wght.ttf);
+}
+
+:root {
+  --background-color: rgb(35, 40, 46);
+}
+
+body {
+  font-family: anek_latin;
+  font-size: 1.5rem;
+  background-color: var(--background-color);
+  color: white;
+
+  text-align: center;
+}
+
+h1 {
+  margin: 2rem 0rem 3rem 0rem;
+}
+
+.location {
+  margin: 3rem 0rem;
+  font-size: 2rem;
+}
+
+.weather-description {
+  margin: 1rem 0rem;
+}
+
+.weather-gif {
+  max-height: 200px;
+}
+
+.temp-wrapper {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(6, minmax(130px, 1fr));
+  grid-template-rows: repeat(3, minmax(40px, 1fr));
+  margin-top: 2rem;
+}
+
+.sunrise-text,
+.sunrise {
+  color: rgb(251, 251, 116);
+}
+
+.sunset-text,
+.sunset {
+  color: rgb(255, 184, 52);
+}
+
+.humidity-text,
+.humidity {
+  color: rgb(80, 187, 222);
+}
+
+.wind-speed-text,
+.wind-speed {
+  color: lightblue;
+}
+
+.weather-heading {
+  font-size: 1.25rem;
+}
+
+.temp-high,
+.temp-low {
+  font-size: 1rem;
+}
+
+.weather-data {
+  font-weight: 1000;
+}
+
+.temp-wrapper img {
+  height: 2rem;
+}

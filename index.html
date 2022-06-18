@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <h1 class="todays-weather-header">What's the weather in...</h1>
+    <div class="location"></div>
+    <form class="city-form">
+      <input type="text" class="city-input" />
+    </form>
+    <button class="convert-temp">Convert Temperature Unit</button>
+    <div class="weather-description"></div>
+    <img class="weather-gif" src="#"></img>
+    <div class="temp-wrapper">
+        <img src="/img/weather-sunset-up.svg" alt="sunrise icon" class="sunrise-icon">
+        <img src="/img/weather-sunset-down.svg" alt="sunset icon" class="sunset-icon">
+        <img src="/img/thermometer.svg" alt="temperature icon" class="temperature-icon">
+        <img src="/img/hand-water.svg" alt="feels like icon" class="feels-like-icon">
+        <img src="/img/water-outline.svg" alt="humidity icon" class="humidity-icon">
+        <img src="/img/weather-windy.svg" alt="wind speed icon" class="wind-speed-icon">
+
+        <div class="sunrise-text weather-heading">Sunrise</div>
+        <div class="sunset-text weather-heading">Sunset</div>
+        <div class="temp-text weather-heading">Temperature</div>
+        <div class="feels-like-text weather-heading">Feels like</div>
+        <div class="humidity-text weather-heading">Humidity</div>
+        <div class="wind-speed-text weather-heading">Wind speed</div>
+
+        <div class="sunrise weather-data"></div>
+        <div class="sunset weather-data"></div>
+        <div class="all-temps-wrapper">
+            <div class="temp-high weather-data"></div>
+            <div class="temp weather-data"></div>
+            <div class="temp-low weather-data"></div>
+        </div>
+        <div class="feels-like weather-data"></div>
+        <div class="humidity weather-data"></div>
+        <div class="wind-speed weather-data"></div>
+    </div>
+    
+  </body>
+</html>
