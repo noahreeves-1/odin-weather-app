@@ -15,7 +15,7 @@ h1 {
 }
 
 .location {
-  margin: 3rem 0rem;
+  margin: 2rem 0rem;
   font-size: 2rem;
 }
 
@@ -24,7 +24,9 @@ h1 {
 }
 
 .weather-gif {
-  max-height: 200px;
+  max-width: 25vw;
+  max-height: 25vh;
+  border-radius: 5%;
 }
 
 .temp-wrapper {
