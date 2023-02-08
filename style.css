@@ -1,14 +1,14 @@
-@font-face {
+/* @font-face {
   font-family: anek_latin;
   src: url(./font/Anek_Latin/AnekLatin-VariableFont_wdth\wght.ttf);
-}
+} */
 
 :root {
   --background-color: rgb(35, 40, 46);
 }
 
 body {
-  font-family: anek_latin;
+  font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   background-color: var(--background-color);
   color: white;
