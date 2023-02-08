@@ -104,7 +104,7 @@ async function displayWeather() {
   //   pressure.textContent = `Air Pressure: ${pressureData} hPa`;
 
   // WEATHER[0]: description
-  const weatherMainData = weatherData.weather[0].main;
+  const weatherMainData = weatherData.weather[0].description;
   const weatherDescriptionData = weatherData.weather[0].description;
   // use GIPHY API to get a GIF of today's weather description
   weatherDescription.textContent = `${weatherMainData}, ${weatherDescriptionData}`;
@@ -148,6 +148,7 @@ async function getGIF(searchText) {
     { mode: "cors" }
   );
   const newGif = await response.json();
+  console.log(newGif);
   weatherGif.src = newGif.data.images.original.url;
 }
 
